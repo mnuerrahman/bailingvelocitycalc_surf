@@ -50,6 +50,7 @@ body {
   display: grid; gap: 24px;
 }
 header { display: flex; flex-wrap: wrap; gap: 16px; align-items: end; justify-content: space-between; }
+.brand { display: block; height: 28px; aspect-ratio: 455 / 86; background: var(--ink); margin-bottom: 14px; -webkit-mask: var(--logo) center / contain no-repeat; mask: var(--logo) center / contain no-repeat; --logo: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAccAAABWCAQAAAAQuJVrAAAFj0lEQVR42u1dW5bdIAzLcLIB7X+R2kI/285MbnjYYIP02d5kgCBk8IPrEgRBEAThf3wZvYe//is0wIJQj9uFhp9+K4oKgrk6vhMRH34vUgqCER1rNBGvT4iSgjBIxzrzFJXPiJKC0EnH2p0imp4SJQWhmY4+ZBQlBaGRjvUnqDB5ThAORAlCxrbfCsKxdJxBRhFSECroOIuMgqC9o5lejZNRu0fhUpCcBXKSkVoohCzqyG3JSJNFxzt4Ys5CwuonabRYt/YI5mOOxr/IwZZVB5Te5mS0+Fx0JCgHn4Xj3+SmOsyj7QyOH+VwiErjZPQaGIZ4R3w7INIXYOqeN8V3l5DK6DGcljTSqbH9l5inm4hKxtowgMttf/FJGRlYJRjgt5mXjjMWtObMp7L0vHGWmUpNqCQaaTXWzEjG3+g4QkYak5GhiUPtH01bNseIRFwy9hurs5QxvwYpVPDSaWoth25n/1iE01Q/pacCBIa/Di57FxBzkrFPHTHVOUJn0wUP/Xn+n/0VelXb/Mcbkcn4XR25mTKO9wWDrWPHm7NpLmR4W3GoBN0zWsbRjPUFOs4ZtD1g0jamsAUGBa0MlGq02HUy9eqfxx29egQRYkwQm4xt6riTmbp6F4Hj/KTY/jTZYKtXUpCRm+rjWW3FlAWFmb9NqezGqP2PlGbqXtTh4TkfWDy6sCpdBXNXwglkpEMW4tn6mNlQhVXpKnTfX/W0hc8SUXhw5p16OJ+Mf/2O1rnYu23c/U5Xmeat88bawyOL+GR8r5XTvmdEGjL4uttHF7g9A/CwnULTcvbehhoHJ3MCyyMmz4sRVcsWkPHz3hEfMtWYxFmOiqw7BvV/8thDk94x4XT7yvg73I75jBZTbG12GpaZqlKhIx1Zt1HZDWx5MJ75xmbIs5vv+K9Uxs8w7WkmTMtJcIOMiNw0ZRKLBFZ3dPjFz4xcMsAgGsuhHBQc73THEQEDsLoyp4cGcO7ODtVC5SwXKunIYDSwbgWCT2kvcxUHRd4w5e0vH9URIWqTerTCo9AG052qKg4qhToi0DXicNQgHGf0QeZqpg1B2dxMzVKQSvVmxqZ6RIuE/XREgGx0TFsSUFnFZZeJEYnmPMhcpUUYAEN4B7lMlaigbcFobBtjoO4AkxHLMkXe2xPh2h6mzGiZGerHXQhZlt5n8WQwMlENNIZX1rykQ4K+m1Z2uK8ZyU9clp5ssZPDtgcqCicPppDFnYz8EYgNTYLJxy7YUAkZyCIxU8hyeV70yW83MMC5aNPqyUKFy4VKsEM2QhYnXxmT3+iuGBdhASGL8Z9/JiKCJe3mIr6Wqacx4U5fsZg6J3j0lKP00WGEkKbHGB+B0tV4OKQcaf2XqXdCL2itjj21AsYuFcDytZop7po/zXqIl3c6SMg7xC1UOyijFWG5abhc/02bmGzk+o/yox+yNHYgGxltLm6TIX129YRpClmmKCNm1qqcWPnGg7CeqVZYQEMeuJh1E/JuENqcZmpNCNPVfbUP5PGbEDOEsPV5jU3WO/yeEToo2TrdCgeP9A9ClsrBgVmJxvkU8L/Ak6oMIFiYrCX4aSqSDzfk4TNpDVL2sZmQpeIV+ckIGVly/mfo4XsVcjjE5DP9h4driICvuYokid0HhpaXBUceXFQwElrVE+si0n6dBkK+XZkD82oBTG5g7rCq45IuhiRk+fgCbBcON1aLAE3LC3S6mqTK7RXFe3u7nqYiaI1NmDlrhJnFP5n43q6q2fY1MVMtcsFbioLCenyJjIJwhboyR2QUhCR0FBkFIa2xikCuDUHYTh0hMgpCFHXsT4cSGQXBhY7v5MJ2WRuCEJaObVEoFBUFwZeOtU5zioqCMIOOP+mGQbNWEIQBOv5LO5jV1BQE0fGaUQZKRBQEQRAEQRCa8AeqpbPUi0FoLgAAAABJRU5ErkJggg==); }
 h1 { font-family: var(--f-display); font-weight: 700; font-size: 2rem; letter-spacing: .01em; margin: 0; line-height: 1.1; text-wrap: balance; }
 h2 { font-family: var(--f-display); font-weight: 600; font-size: 1.3rem; margin: 0; letter-spacing: .01em; }
 .sub { color: var(--muted); margin: 4px 0 0; max-width: 62ch; }
@@ -77,9 +78,9 @@ input, select {
 input[type="text"] { font-family: var(--f-body); }
 input:focus-visible, select:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 .hint { font-size: .78rem; color: var(--muted); }
-details { border-top: 1px solid var(--line); padding-top: 12px; }
-summary { cursor: pointer; font-weight: 600; font-size: .88rem; color: var(--accent); }
-details .fields { margin-top: 12px; }
+.limits { border-top: 1px solid var(--line); padding-top: 12px; }
+.limits h3 { margin: 0; font-weight: 600; font-size: .88rem; color: var(--accent); }
+.limits .fields { margin-top: 12px; }
 
 .result { display: grid; gap: 14px; }
 .bv-main { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
@@ -170,7 +171,7 @@ footer p { margin: 0 0 6px; }
           <span class="hint" id="d-alt"></span>
         </div>
         <div class="field">
-          <label for="Q">Compressor air flow (FAD) <span class="unit" data-u="flow"></span></label>
+          <label for="Q">Compressor air flow - Free Air Delivery (FAD) <span class="unit" data-u="flow"></span></label>
           <input id="Q" type="number" step="any" min="0">
           <span class="hint" id="Q-alt"></span>
         </div>
@@ -189,24 +190,16 @@ footer p { margin: 0 0 6px; }
           <input id="temp" type="number" step="any" value="15">
           <span class="hint" id="temp-alt"></span>
         </div>
-        <div class="field full">
-          <label for="mode">Flushing condition</label>
-          <select id="mode">
-            <option value="dry">Dry air</option>
-            <option value="wet">Water injection</option>
-            <option value="custom">Custom limits</option>
-          </select>
-        </div>
       </div>
-      <details id="limits-box">
-        <summary>Target limits (ft/min)</summary>
+      <div class="limits" id="limits-box">
+        <h3>Target limits (ft/min)</h3>
         <div class="fields">
           <div class="field"><label for="lmin">Minimum for good cleaning</label><input id="lmin" type="number" step="any" min="0"></div>
           <div class="field"><label for="lmax">Upper end of target</label><input id="lmax" type="number" step="any" min="0"></div>
           <div class="field"><label for="lwear">Wear risk above</label><input id="lwear" type="number" step="any" min="0"></div>
           <div class="field"><span class="hint">Defaults are common rules of thumb. Heavy or coarse cuttings, clay and wet holes need higher values; adjust to site experience and the bit supplier's guidance.</span></div>
         </div>
-      </details>
+      </div>
       <div class="btns">
         <button class="b primary" type="submit" id="add">Add to comparison</button>
         <button class="b" type="button" id="update" hidden>Update scenario</button>
@@ -247,7 +240,8 @@ footer p { margin: 0 0 6px; }
         <div class="hint" id="store-note">Scenarios are saved in this browser only.</div>
       </div>
       <div class="btns">
-        <button class="b" type="button" id="copy">Copy table for Excel</button>
+        <button class="b" type="button" id="copy">Copy as image</button>
+        <button class="b" type="button" id="download">Download PNG</button>
       </div>
     </div>
     <div class="legend">
@@ -268,7 +262,6 @@ footer p { margin: 0 0 6px; }
         <tbody id="tbody"></tbody>
       </table>
     </div>
-    <textarea id="clip" aria-label="Table text for copying" hidden></textarea>
   </section>
 
   <footer>
@@ -293,7 +286,7 @@ footer p { margin: 0 0 6px; }
 <script>
 (() => {
   const IN = 0.0254, FT = 0.3048, CFM = 1 / 35.3147, FPM = 196.8504; // m per in, m per ft, m³/min per cfm, ft/min per m/s
-  const MODES = { dry: [5000, 7000, 10000], wet: [4000, 6000, 9000] };
+  const LIMITS = [5000, 8000, 10000]; // default min, upper target, wear risk (ft/min); editable per scenario
   const KEY = 'bv-calc-v1';
   const $ = id => document.getElementById(id);
   const fmt = (v, dp = 0) => Number.isFinite(v) ? v.toLocaleString('en-US', { minimumFractionDigits: dp, maximumFractionDigits: dp }) : '–';
@@ -351,7 +344,6 @@ footer p { margin: 0 0 6px; }
       eff: Math.min(100, Math.max(10, parseFloat($('eff').value) || 100)),
       alt: (parseFloat($('alt').value) || 0) * (imp() ? FT : 1),
       T: imp() ? ((parseFloat($('temp').value) || 59) - 32) / 1.8 : (parseFloat($('temp').value) || 0),
-      mode: $('mode').value,
       lim: [parseFloat($('lmin').value), parseFloat($('lmax').value), parseFloat($('lwear').value)]
     };
   }
@@ -364,7 +356,6 @@ footer p { margin: 0 0 6px; }
     $('eff').value = round(s.eff, 1);
     $('alt').value = round(imp() ? s.alt / FT : s.alt, 0);
     $('temp').value = round(imp() ? s.T * 1.8 + 32 : s.T, 1);
-    $('mode').value = s.mode;
     [$('lmin').value, $('lmax').value, $('lwear').value] = s.lim;
   }
 
@@ -397,7 +388,7 @@ footer p { margin: 0 0 6px; }
   }
   function update() {
     const s = readForm();
-    if (s.lim.some(v => !Number.isFinite(v))) s.lim = (MODES[s.mode] || MODES.dry).slice();
+    if (s.lim.some(v => !Number.isFinite(v))) s.lim = LIMITS.slice();
     const r = calc(s), ok = s.D > 0 && s.d >= 0 && s.Q > 0 && s.D > s.d;
     $('D-alt').textContent = Number.isFinite(s.D) ? (imp() ? `= ${fmt(s.D * 1000, 1)} mm` : `= ${fmt(s.D / IN, 3)} in`) : '';
     $('d-alt').textContent = Number.isFinite(s.d) ? (imp() ? `= ${fmt(s.d * 1000, 1)} mm` : `= ${fmt(s.d / IN, 3)} in`) : '';
@@ -430,7 +421,7 @@ footer p { margin: 0 0 6px; }
   // ---- comparison ----
   function save() {
     const ok = store.set(state);
-    $('store-note').textContent = ok ? 'Scenarios are saved in this browser only. Use "Copy table for Excel" to share them.'
+    $('store-note').textContent = ok ? 'Scenarios are saved in this browser only. Use "Copy as image" to paste the comparison into slides or documents.'
       : 'This browser is not saving scenarios; they will be lost when the page closes.';
   }
   function render() {
@@ -461,7 +452,7 @@ footer p { margin: 0 0 6px; }
   function esc(t) { return String(t).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c])); }
 
   function chart(limIn) {
-    const lim = limIn.every(Number.isFinite) ? limIn : MODES.dry;
+    const lim = limIn.every(Number.isFinite) ? limIn : LIMITS;
     const rows = state.list.map(s => ({ s, r: calc(s) }));
     const W = 760, L = 230, R = 24, T = 26, rowH = 34, H = T + Math.max(rows.length, 1) * rowH + 30;
     const max = Math.ceil(Math.max(lim[2] * 1.2, ...rows.map(o => o.r.fpm || 0)) * 1.08 / 1000) * 1000;
@@ -491,15 +482,8 @@ footer p { margin: 0 0 6px; }
   $('u-imp').onclick = () => setUnits('imp');
   $('u-met').onclick = () => setUnits('met');
   ['name', 'D', 'd', 'Q', 'eff', 'alt', 'temp', 'lmin', 'lmax', 'lwear'].forEach(id => $(id).addEventListener('input', () => {
-    if (['lmin', 'lmax', 'lwear'].includes(id)) $('mode').value = 'custom';
     update();
   }));
-  $('mode').onchange = () => {
-    const m = MODES[$('mode').value];
-    if (m) [$('lmin').value, $('lmax').value, $('lwear').value] = m;
-    else $('limits-box').open = true;
-    update();
-  };
   function toast(t) { $('toast').textContent = t; clearTimeout(toast.t); toast.t = setTimeout(() => $('toast').textContent = '', 2600); }
   function valid(s) { return s.D > 0 && s.Q > 0 && s.d >= 0 && s.D > s.d && s.lim.every(Number.isFinite); }
 
@@ -529,25 +513,96 @@ footer p { margin: 0 0 6px; }
       else { b.dataset.armed = '1'; b.textContent = 'Confirm delete'; setTimeout(() => { if (b.isConnected) { delete b.dataset.armed; b.textContent = 'Delete'; } }, 3000); }
     }
   });
+  // ---- export comparison as an image (for slides and documents) ----
+  const LIGHT = { bg: '#f3f5f6', surface: '#ffffff', ink: '#1b2329', muted: '#5b6871', line: '#d7dde1', accent: '#0e6d78', 'accent-soft': '#e0f0f1',
+    low: '#b3362b', 'low-soft': '#f8e3e0', good: '#2f7d3b', 'good-soft': '#e1f1e3', high: '#9a6a00', 'high-soft': '#fbefd2', 'band-mid': '#eef1f3' };
+  const SANS = 'Segoe UI, Arial, sans-serif', MONO = 'Consolas, Courier New, monospace';
+  function exportSvg() {
+    const W = 1100, P = 20, IW = W - 2 * P;
+    const fix = v => v.replace(/var\(--([a-z-]+)\)/g, (_, n) => LIGHT[n] || '#000')
+      .replace(/IBM Plex Mono, monospace/g, MONO).replace(/IBM Plex Sans, sans-serif/g, SANS);
+    const t = (x, y, txt, o = '') => `<text x="${x}" y="${y}"${o.includes('font-family=') ? '' : ` font-family="${SANS}"`}${o.includes('fill=') ? '' : ` fill="${LIGHT.ink}"`} ${o}>${txt}</text>`;
+    let y = P, g = '';
+    // title + logo
+    g += t(P, y + 22, 'Bailing velocity · scenario comparison', 'font-size="22" font-weight="700"');
+    const logo = (getComputedStyle(document.querySelector('.brand')).getPropertyValue('--logo').match(/url\(\s*"?([^")\s]+)"?\s*\)/) || [])[1];
+    if (logo) g += `<image href="${logo}" x="${W - P - 127}" y="${y + 2}" width="127" height="24"/>`;
+    y += 44;
+    // legend
+    let lx = P;
+    [['low-soft', 'low', 'Below minimum'], ['good-soft', 'good', 'Target band'], ['band-mid', 'line', 'Above target'], ['high-soft', 'high', 'Wear risk']].forEach(([f, b, txt]) => {
+      g += `<rect x="${lx}" y="${y}" width="12" height="12" rx="2" fill="${LIGHT[f]}" stroke="${LIGHT[b]}"/>` + t(lx + 18, y + 10.5, txt, `font-size="12" fill="${LIGHT.muted}"`);
+      lx += 30 + txt.length * 6.6;
+    });
+    y += 24;
+    // chart, scaled to the full width
+    chart(readForm().lim);
+    const src = $('chart').querySelector('svg'), vb = src.viewBox.baseVal, ch = vb.height * IW / vb.width;
+    g += `<svg x="${P}" y="${y}" width="${IW}" height="${ch}" viewBox="0 0 ${vb.width} ${vb.height}">${fix(src.innerHTML)}</svg>`;
+    y += ch + 16;
+    // table
+    const cols = [['Scenario', 250, 'start'], ['Hole Ø in / mm', 100], ['Pipe OD in / mm', 100], ['FAD cfm / m³/min', 110], ['Eff.', 50],
+      ['Site m / °C', 80], ['Corr. factor', 70], ['Net air cfm', 70], ['BV ft/min', 70], ['BV m/s', 60], ['Status', 100, 'start']];
+    const k = IW / cols.reduce((a, c) => a + c[1], 0), rowH = 28;
+    const cell = (x, w, al, y0, txt, o) => t(al === 'start' ? x + 8 : x + w - 8, y0, txt, `text-anchor="${al || 'end'}" ${o}`);
+    let x = P;
+    g += `<rect x="${P}" y="${y}" width="${IW}" height="${rowH}" fill="${LIGHT.bg}"/>`;
+    cols.forEach(([h, w, al]) => { w *= k; g += cell(x, w, al, y + 18, h, `font-size="10.5" font-weight="600" fill="${LIGHT.muted}"`); x += w; });
+    y += rowH;
+    state.list.forEach(s => {
+      const r = calc(s), [cls, txt] = status(r.fpm, s.lim);
+      const name = s.name.length > 38 ? s.name.slice(0, 37) + '…' : s.name;
+      const vals = [esc(name), `${fmt(s.D / IN, 3)} / ${fmt(s.D * 1000, 0)}`, `${fmt(s.d / IN, 3)} / ${fmt(s.d * 1000, 0)}`, `${fmt(s.Q / CFM, 0)} / ${fmt(s.Q, 1)}`,
+        `${fmt(s.eff, 0)}%`, `${fmt(s.alt, 0)} / ${fmt(s.T, 0)}`, fmt(r.factor, 3), fmt(r.qSite / CFM, 0), fmt(r.fpm, 0), fmt(r.ms, 1), txt.split(':')[0]];
+      const col = { 's-low': 'low', 's-good': 'good', 's-mid': 'accent', 's-high': 'high', 's-err': 'muted' }[cls];
+      g += `<line x1="${P}" x2="${W - P}" y1="${y}" y2="${y}" stroke="${LIGHT.line}"/>`;
+      x = P;
+      cols.forEach(([, w, al], i) => {
+        w *= k;
+        const o = i === 0 ? 'font-size="12.5"'
+          : i === 10 ? `font-size="12" font-weight="600" fill="${LIGHT[col]}"`
+          : `font-size="12.5" font-family="${MONO}"${i === 8 ? ' font-weight="700"' : ''}`;
+        g += cell(x, w, al, y + 18.5, vals[i], o); x += w;
+      });
+      y += rowH;
+    });
+    g += `<line x1="${P}" x2="${W - P}" y1="${y}" y2="${y}" stroke="${LIGHT.line}"/>`;
+    y += 20;
+    g += t(P, y, `Shading uses the current limits: minimum ${fmt(+$('lmin').value)} · upper target ${fmt(+$('lmax').value)} · wear risk above ${fmt(+$('lwear').value)} ft/min. Each scenario is rated against its own limits.`, `font-size="11" fill="${LIGHT.muted}"`);
+    y += P;
+    return { svg: `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${y}" viewBox="0 0 ${W} ${y}"><rect width="100%" height="100%" fill="#fff"/>${g}</svg>`, W, H: y };
+  }
+  function exportPng() {
+    const { svg, W, H } = exportSvg(), scale = 2;
+    return new Promise((ok, fail) => {
+      const img = new Image();
+      img.onload = () => {
+        const c = document.createElement('canvas'); c.width = W * scale; c.height = H * scale;
+        const x = c.getContext('2d'); x.scale(scale, scale); x.drawImage(img, 0, 0);
+        c.toBlob(b => b ? ok(b) : fail(new Error('no image')), 'image/png');
+      };
+      img.onerror = fail;
+      img.src = 'data:image/svg+xml;charset=utf-8,' + encodeURIComponent(svg);
+    });
+  }
+  function downloadPng() {
+    exportPng().then(b => {
+      const a = document.createElement('a'); a.href = URL.createObjectURL(b); a.download = 'bailing-velocity-comparison.png';
+      a.click(); setTimeout(() => URL.revokeObjectURL(a.href), 1000); toast('Image downloaded');
+    }, () => toast('Could not create the image'));
+  }
   $('copy').onclick = () => {
-    const head = ['Scenario', 'Hole (in)', 'Hole (mm)', 'Pipe OD (in)', 'Pipe OD (mm)', 'FAD (cfm)', 'FAD (m3/min)', 'Efficiency (%)',
-      'Altitude (m)', 'Temperature (C)', 'Air density (kg/m3)', 'Correction factor', 'Net air at site (cfm)', 'Net air at site (m3/min)',
-      'BV (ft/min)', 'BV (m/s)', 'BV uncorrected (ft/min)', 'Min (ft/min)', 'Target max (ft/min)', 'Wear (ft/min)', 'Status'];
-    const lines = [head.join('\t')].concat(state.list.map(s => {
-      const r = calc(s);
-      return [s.name, (s.D / IN).toFixed(3), (s.D * 1000).toFixed(1), (s.d / IN).toFixed(3), (s.d * 1000).toFixed(1),
-        (s.Q / CFM).toFixed(0), s.Q.toFixed(2), s.eff, s.alt.toFixed(0), s.T.toFixed(1), r.rho.toFixed(4), r.factor.toFixed(4),
-        (r.qSite / CFM).toFixed(0), r.qSite.toFixed(2), r.fpm.toFixed(0), r.ms.toFixed(2), r.fpmUncorr.toFixed(0),
-        ...s.lim, status(r.fpm, s.lim)[1]].join('\t');
-    }));
-    const text = lines.join('\n');
-    const fallback = () => { const t = $('clip'); t.hidden = false; t.value = text; t.select(); toast('Press Ctrl+C to copy the selected table'); };
-    try { navigator.clipboard.writeText(text).then(() => toast('Table copied. Paste it into Excel.'), fallback); } catch { fallback(); }
+    if (!state.list.length) { toast('Add a scenario first'); return; }
+    try {
+      navigator.clipboard.write([new ClipboardItem({ 'image/png': exportPng() })])
+        .then(() => toast('Image copied. Paste it into PowerPoint or Word.'), () => { toast('Copy blocked by the browser, downloading instead'); downloadPng(); });
+    } catch { downloadPng(); }
   };
+  $('download').onclick = () => state.list.length ? downloadPng() : toast('Add a scenario first');
 
   // ---- start ----
   if (state.list[0]) writeForm(state.list[0]);
-  else [$('lmin').value, $('lmax').value, $('lwear').value] = MODES.dry;
+  else [$('lmin').value, $('lmax').value, $('lwear').value] = LIMITS;
   setUnits(state.units || 'met');
   render();
 })();
